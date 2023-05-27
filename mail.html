@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mail.css">
+    <link href="http://fonts.cdnfonts.com/css/lucida-sans" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
     <title>Straight to You</title>
+    <link rel="icon" type="image/PNG" href="logo.PNG">
 </head>
 <body>
-    <h1>Straight to You</h1>
+    <nav>
+        <img src = "logo.PNG" class="logo" alt = "logo">
+        <h1 class="title">Straight to You</h1>
+        <ul>
+            <li><a class = "cont">Home</a></li>
+            <li><a class = "cont">Search</a></li>
+            <li><a class = "cont">Menu</a></li>
+            <li><a class = "cont">Help</a></li>
+            <li><a class = "cont">About Us</a></li>
+        </ul>
+    </nav>
+    <main class = "div-img">
+        <div class = "div1">
+            <img src = "burger2.jpeg" id="uq" class = "slide" alt = "burger">
+        </div>
+        <div class = "div1">
+            <img src = "pizza2.avif" id="iq" class = "slide" alt = "pizza2">
+        </div>
+        <div class = "div1">
+            <img src = "icecream.jpeg" id="iq"class = "slide" alt = "icecream">
+        </div>
+    </main>
+    <div class = "move">
+        <button  class="button" onclick = "goPrev()">
+            <p class="lc"><</p>
+        </button>
+        <button class="button" onclick = "goNext()">
+            <p class="rc">></p>
+        </button>
+    </div>
+    <script src="mail.js"></script>
 </body>
 </html>
