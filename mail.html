@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
     <title>Straight to You</title>
     <link rel="icon" type="image/PNG" href="logo.PNG">
 </head>
@@ -18,7 +23,7 @@
         <img src = "logo.PNG" class="logo" alt = "logo">
         <h1 class="title">Straight to You</h1>
         <ul>
-            <li><a class = "cont">Home</a></li>
+            <li><a class = "cont" href="mail.html">Home</a></li>
             <li><a class = "cont">Search</a></li>
             <li><a class = "cont">Menu</a></li>
             <li><a class = "cont">Help</a></li>
@@ -27,23 +32,34 @@
     </nav>
     <main class = "div-img">
         <div class = "div1">
-            <img src = "burger2.jpeg" id="uq" class = "slide" alt = "burger">
+            <img src = "burger2.jpeg" id="uq" class = "slide fade" alt = "burger">
         </div>
         <div class = "div1">
-            <img src = "pizza2.avif" id="iq" class = "slide" alt = "pizza2">
+            <img src = "pizza2.avif" id="iq" class = "slide fade" alt = "pizza2">
         </div>
         <div class = "div1">
-            <img src = "icecream.jpeg" id="iq"class = "slide" alt = "icecream">
+            <img src = "icecream.jpeg" id="iq"class = "slide fade" alt = "icecream">
         </div>
     </main>
-    <div class = "move">
+    <!-- <div class = "move">
         <button  class="button" onclick = "goPrev()">
             <p class="lc"><</p>
         </button>
         <button class="button" onclick = "goNext()">
             <p class="rc">></p>
         </button>
-    </div>
+    </div> -->
+    <div class="quote"><h1 class="up">Fresh Food</h1><h1 class="m"> at you're </h1><h1 class="lo">Fingertips</h1></div>
+        <div class ="book">
+            <button class = "button2" onclick="window.location.href='https://fonts.google.com/specimen/Marcellus';">
+                <p>Book a Table</p>
+            </button>
+        </div>
+        <div class = "order">
+            <button class = "button3" href = "">
+                <p>Order Now</p>
+            </button>
+        </div>
     <script src="mail.js"></script>
 </body>
 </html>
