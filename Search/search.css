@@ -1,0 +1,144 @@
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+  body{
+    background-color: black;
+   font-family: 'Lucida Sans', sans-serif;
+   background-size: cover;
+   height: 100vh;
+   background-position: center;
+  }
+  .title {
+    padding : 38px 100px;
+    position : absolute;
+    color: white;
+    font-family: 'Marck Script', cursive;
+    background: linear-gradient(170deg, #FF5F1F 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+  }
+  nav ul{
+    cursor: pointer;
+    list-style-type: none;
+    float: right;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    text-decoration: none;
+    /* padding: 25px 100px; */
+    text-align: left;
+    display: block;
+    font-size: 18px;
+  }
+  nav ul li a:hover{
+    transition: .3s;
+    color: #FF5F1F;
+  }
+  .cont{
+    font-family: 'Lucida Sans', sans-serif;
+    padding:40px 40px;
+    color: white;
+  }
+  #search:before{
+    position: absolute;
+    content: '';
+    border-bottom: 3px solid #FF5F1F;
+    top: 65px;
+    width: 2%;
+    left: 965px;
+    /* color: #FF5F1F ; */
+  }
+  .logo{
+    position: absolute;
+    width: 3%;
+    top: 28px;
+    left: 46px;
+  }
+
+/* .search-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 120px;
+  padding-left : 650px;
+} */
+
+:root {
+  --rad: .7rem;
+  --dur: .3s;
+  --color-dark: black;
+  --color-light: black;
+  --color-brand: #FF5F1F;
+  --font-fam: 'Lato', sans-serif;
+  --height: 3rem;
+  --btn-width: 4rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+}
+
+
+form {
+  position: relative;
+  top: 140px;
+  left: 350px;
+  width: 46rem;
+  background: var(--color-brand);
+  border-radius: var(--rad);
+}
+input, button {
+
+  color: white;
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: var(--color-dark);
+  font-size: 1.1rem;
+}
+input[type="search"] {
+  border: 0.1px solid grey;
+  color: white;
+  outline: 0; 
+  width: 100%;
+  background: var(--color-light);
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  appearance: none; 
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+button {
+  display: none; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: var(--color-brand);
+  border-radius: 0 var(--rad) var(--rad) 0;
+  cursor: pointer;
+}
+input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+  + button {
+    display: block;
+  }
+}
+label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

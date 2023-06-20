@@ -22,8 +22,8 @@
   -webkit-text-fill-color: transparent;
     
   }
-  
   nav ul{
+    cursor: pointer;
     list-style-type: none;
     float: right;
   }
@@ -52,7 +52,7 @@
     border-bottom: 3px solid #FF5F1F;
     top: 65px;
     width: 2%;
-    left: 795px;
+    left: 828px;
     /* color: #FF5F1F; */
   }
 
@@ -159,6 +159,7 @@
   border: none;
   background-color: white;
   font-size: 16px;
+  cursor: pointer;
 }
 .order{
   position: absolute;
@@ -167,12 +168,14 @@
   padding : 65px;
   clip-path: polygon(27% 35%, 100% 35%, 100% 64%, 42% 64%, 5% 64%);
   background-color: #FF5F1F; 
+  cursor: pointer;
 }
 .button3{
   font-family: 'Lucida Sans', sans-serif;
    border: none;
    background-color: #FF5F1F;
    font-size: 16px;
+   cursor: pointer;
 }
 .book{
   position: absolute;
@@ -181,6 +184,7 @@
   padding : 50px;
   clip-path: polygon(0 29%, 100% 30%, 76% 68%, 0 68%);
   background-color: white;
+  cursor: pointer;
 }
 .forabhi{
   position:absolute;
@@ -262,7 +266,7 @@ span{
 .dot {
   position: relative;
   top: -130px;
-  left : -300px;
+  left : -275px;
   height: 10px;
   width: 10px;
   margin: 0 2px;
